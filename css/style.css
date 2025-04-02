@@ -123,3 +123,40 @@ footer {
     }
     
 }
+
+/* main > hr {
+
+} */
+.positivo {
+
+}
+.negativo {
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .datos {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        label {
+            width: 200px;
+        }
+        input {
+            width: 255px;
+        }
+    }
+    .botones {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .superior {
+        padding-top: 1rem;
+    }
+
+}

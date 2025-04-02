@@ -7,12 +7,14 @@
     <meta name="description" content="La mejor ubicación para tu escapada rural" />
     <meta name="keywords" content="Paseos por la montaña, Ruta rural" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <title>Inicio - Mas dels Avets</title>
+    <title>Contactar - Mas dels Avets</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header>
-        
+        <div>
+            <h1 tabindex="0">Hotel rural Mas dels Avets</h1>
+        </div>
     </header>
     <nav>
         <div>
@@ -28,16 +30,40 @@
         <section>
             <div>
                 <h1 tabindex="0">Hotel rural Mas dels Avets</h1>
-                <img src="img/hermosa-vista-montanas-rocosas-arboles.avif" alt="Espectacular vista de las montañas y del valle">
             </div>
-            <div>
-                <h2 tabindex="0">
-                Bienvenidos
-                </h2>
-                <p tabindex="0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusantium ipsam tempore esse suscipit aperiam enim necessitatibus itaque perspiciatis sint illum sit nisi, eum delectus dolore laborum? Amet, id porro!
-                </p>
-            </div>
+        </section>
+        <hr>
+        <section>
+            <form action="#" name="contacto">
+                <div class="datos superior">
+                    <label for="nombre">Nombre y Apellidos : </label>
+                    <input type="text" name="nombre" id="nombre" required pattern="[A-Za-z\sàáèéìíòóùúÀÁÈÉÌÍÒÓÙÚçÇñÑ-]{2,}" aria-label="Escribe tu nombre y apellidos" aria-describedby="errorNombre" aria-invalid="true">
+                    <p id="errorNombre"></p>
+                </div>
+                <div class="datos">
+                    <label for="email">Indica tu correo : </label>
+                    <input type="email" name="email" id="email" required aria-label="Escribe tu direccion de email" aria-describedby="errorCorreo" aria-invalid="true">
+                    <p id="errorCorreo"></p>
+                </div>
+                <div class="datos">
+                    <label for="asunto">Indica el asunto : </label>
+                    <input type="text" name="asunto" id="asunto" required aria-label="Escribe un asunto" aria-describedby="errorAsunto" aria-invalid="true">
+                    <p id="errorAsunto"></p>
+                </div>
+                <div class="datos">
+                    <label for="comentario">Comentario / Consulta : </label>
+                    <textarea cols="30" rows="5" id="comentario" required aria-label="Escribe tu comentario o petición" aria-describedby="errorComentario" aria-invalid="true"></textarea>
+                    <p id="errorComentario"></p>
+                </div>
+                <div class="botones">
+                    <div>
+                        <input type="submit" value="Enviar formulario">
+                    </div>
+                    <div>
+                        <input type="reset" value="Borrar formulario">
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
     <footer>
@@ -47,11 +73,11 @@
                 Sobre nosotros
                 </h2>
                 <ul>
-                    <li><a href="./quienes_somos.html">¿Quiénes somos?</a></li>
+                    <li><a href="#">¿Quiénes somos?</a></li>
                     <li><a href="./contactar.html">Contactar</a></li>
-                    <li><a href="https://blog.hotelesrurales.com">Blog hoteles Rurales</a></li>
-                    <li><a href="./legal.html">Condiciones legales</a></li>
-                    <li><a href="./cookies.html">Politica de cookies</a></li>
+                    <li><a href="https://blog.hotelesrurales.es">Blog hoteles Rurales</a></li>
+                    <li><a href="#">Condiciones legales</a></li>
+                    <li><a href="#">Politica de cookies</a></li>
                 </ul>   
             </div>
             <div class="apps">
@@ -59,8 +85,8 @@
                 Descargate la app
                 </h2>
                 <ul>
-                    <li><a href="https://play.google.com/store/apps/details?id=com.escapadarural.app.viajeros"><img src="img/google-play2.png" alt="Descargar la aplicación en Google Play"></a></li>
-                    <li><a href="https://play.google.com/store/apps/details?id=com.escapadarural.app.viajeros"><img src="img/apple-store2.png" alt="Descargar la aplicación en la Apple Store"></a></li>
+                    <li><a href="https://play.google.com/store/apps/"><img src="img/google-play2.avif" alt="Descargar la aplicación en Google Play"></a></li>
+                    <li><a href="https://www.apple.com/es/app-store/"><img src="img/apple-store2.avif" alt="Descargar la aplicación en la Apple Store"></a></li>
                 </ul>   
             </div>
             <div class="links_rrss">
@@ -68,9 +94,9 @@
                 Síguenos
                 </h2>
                 <ul>
-                    <li><a href="https://facebook.com"><img src="img/png-transparent-facebook.png" alt="">Facebook</a></li>
-                    <li><a href="https://x.com"><img src="img/png-transparent-twitter.png" alt="">Twitter</a></li>
-                    <li><a href="https://instagram.com"><img src="img/png-transparent-instagram.png" alt="">Instagram</a></li>
+                    <li><a href="https://facebook.com"><img src="img/png-transparent-facebook.avif" alt="">Facebook</a></li>
+                    <li><a href="https://x.com"><img src="img/png-transparent-twitter.avif" alt="">Twitter</a></li>
+                    <li><a href="https://instagram.com"><img src="img/png-transparent-instagram.avif" alt="">Instagram</a></li>
                 </ul>
             </div>
         </div>
