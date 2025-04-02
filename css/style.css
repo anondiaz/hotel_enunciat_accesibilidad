@@ -1,0 +1,125 @@
+/* Traemos las fuentes de nuestro servidor */
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+        url("../fonts/Roboto-Regular.woff") format("woff"),
+        url("../fonts/Roboto-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Establecemos unos minimos para poder gestionar los elementos*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --width_xl: 1000px;
+    --primary_color: #19c20a;
+    --text_color: black;
+    --enfasis_color: red;
+}
+
+/* Ayuda a definir estructura y distribución de los elementos, comentar cuando ya no sea necesario */
+/* div {
+  border: 2px solid black;
+} */
+
+nav {
+    background-color: var(--primary_color);
+    position: sticky;
+    top: 0px;
+    div {
+        max-width: var(--width_xl);
+        margin: 0 auto;
+        height: 4rem;
+        ul {
+            padding: 1rem 0.5rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    li {
+        
+        list-style: none;
+        
+        
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: var(--text_color);
+    }
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+main {
+    section {
+        max-width: var(--width_xl);
+        margin: 0 auto;
+    }
+    div {
+        img {
+            padding: 0.25rem;  
+            max-width: 100%;
+        }
+        h2 {
+            padding: 0.5rem;
+            font-size: 1.75rem;
+        }
+        p {
+            padding: 0.5rem;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+footer {
+    background-color: var(--primary_color);
+    .pie_pagina {
+        margin: 0 auto;
+        max-width: var(--width_xl);
+        display: flex;
+        justify-content: space-between;
+    }
+    h2 {
+        padding: 0.5rem;
+        font-size: 1.25rem;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    li {
+        padding: 0.5rem;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: var(--text_color);
+    }
+    .apps {
+        img {
+            width: 125px;
+        }
+    }
+    .links_rrss {
+        img {
+            width: 25px;
+        }
+    }
+    
+}
