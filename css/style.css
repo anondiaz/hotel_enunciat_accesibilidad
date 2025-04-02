@@ -128,10 +128,19 @@ footer {
 
 } */
 .positivo {
+    display: inline;
+    color: green;
+    margin-right: 1rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
 
 }
 .negativo {
-    
+    display: inline;
+    color: red;
+    margin-right: 1rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
 }
 
 form {
