@@ -30,7 +30,9 @@
 /* div {
   border: 2px solid black;
 } */
-
+header {
+    background-color: var(--primary_color);
+}
 nav {
     background-color: var(--primary_color);
     position: sticky;
@@ -64,24 +66,28 @@ h1 {
     font-size: 2.5rem;
 }
 
+h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
 main {
     section {
         max-width: var(--width_xl);
         margin: 0 auto;
     }
-    div {
-        img {
-            padding: 0.25rem;  
-            max-width: 100%;
-        }
-        h2 {
-            padding: 0.5rem;
-            font-size: 1.75rem;
-        }
-        p {
-            padding: 0.5rem;
-            font-size: 1.25rem;
-        }
+    div > img {
+        padding: 0.25rem;  
+        max-width: 100%;
+    }
+    div > h3 {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    div > p {
+        padding: 0.5rem;
+        font-size: 1.25rem;
     }
 }
 
@@ -95,7 +101,7 @@ footer {
     }
     h2 {
         padding: 0.5rem;
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     ul {
         list-style: none;
@@ -124,23 +130,29 @@ footer {
     
 }
 
-/* main > hr {
-
-} */
-.positivo {
-    display: inline;
-    color: green;
-    margin-right: 1rem;
-    line-height: 2rem;
-    font-size: 1.5rem;
-
+main > hr {
+border-width: 2px;
+border-color: black;
 }
-.negativo {
-    display: inline;
-    color: red;
-    margin-right: 1rem;
-    line-height: 2rem;
-    font-size: 1.5rem;
+
+.recomendaciones{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    div {
+        width: 25rem;
+    }
+    li > h3 {
+        padding: 0;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .positivo {
+        color: darkgreen;
+    }
+    .negativo {
+        color: darkred;
+    }
 }
 
 form {
@@ -153,13 +165,15 @@ form {
         justify-content: space-between;
         align-items: center;
         label {
-            width: 200px;
+            width: 250px;
+            font-size: 1.25rem;
         }
         input {
-            width: 255px;
+            width: 250px;
         }
     }
     .botones {
+        width: 350px;
         padding: 0.5rem;
         display: flex;
         justify-content: space-between;
