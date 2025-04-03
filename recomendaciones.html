@@ -9,8 +9,15 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Recomendaciones - Mas dels Avets</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Cogemos los iconos Awesome para las recomendaciones y luego modificamos los colores en el css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
+<!-- 
+Colocaremos etiquetas aria-label en todos los enlaces para que den un texto descriptivo adecuado
+Colocamos tabindex 0 para que pase el lector por todos los h* y parrafos para que los lea
+Colocamos textos descriptivos en los alt de las imagenes para mejorar la comprensión de la página
+Convertimos todas las imagenes a formatos más modernos y más ligeros para que la carga sea más rápida y reducir la carga del dipositivo
+-->
 <body>
     <header>
         <div>
@@ -43,6 +50,7 @@
                     </p>
                 </div>
                 <div class="recomendaciones">
+                <!-- En estas listas de las recomendaciones pusimos h3 por recomendación de los testeos de accesibilidad -->
                 <div class="positivo">
                     <i class="fa-solid fa-check"></i>
                     <ul>
@@ -97,6 +105,5 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
 </body>
 </html>

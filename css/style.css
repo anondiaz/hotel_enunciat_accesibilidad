@@ -19,6 +19,7 @@
     font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+/* Definimos unos colores que nos permitan combinar para mejorar la accesibilidad, también definimos el ancho de página */
 :root {
     --width_xl: 1000px;
     --primary_color: #19c20a;
@@ -30,30 +31,34 @@
 /* div {
   border: 2px solid black;
 } */
+/* Establecemos el color de fondo de la cabecera */
 header {
     background-color: var(--primary_color);
 }
+/* Definimos el menú de navegación */
 nav {
+    /* Color de fondo, posición y anclaje del menú */
     background-color: var(--primary_color);
     position: sticky;
     top: 0px;
+    /* Ancho del menú y altura */
     div {
         max-width: var(--width_xl);
         margin: 0 auto;
         height: 4rem;
+        /* Establecemos la dsiposición de las entradas del menú */
         ul {
             padding: 1rem 0.5rem;
             display: flex;
             justify-content: space-between;
         }
     }
+    /* Estilo de la lista fuera para que no se vea feo*/
     li {
-        
         list-style: none;
-        
-        
     }
     a {
+        /* Fuera la decoración de los enlaces, tamaño de letra más grande y color de texto */
         text-decoration: none;
         font-size: 1.25rem;
         color: var(--text_color);
@@ -61,37 +66,46 @@ nav {
 }
 
 h1 {
+    /* Alineamos el texto y establecemos el tamaño de letra de la cabecera */
     text-align: center;
     padding: 1rem;
     font-size: 2.5rem;
 }
 
 h2 {
+    /* Alineamos el texto y establecemos el tamaño de letra de los segundos titulos */
     text-align: center;
     padding: 1rem;
     font-size: 2rem;
 }
 
+/* Caracteristicas del cuerpo principal de la página */
 main {
     section {
+        /* Establecemos el ancho de las secciones */
         max-width: var(--width_xl);
         margin: 0 auto;
     }
     div > img {
+        /* Las imagenes con un margen y al 100% de ancho */
         padding: 0.25rem;  
         max-width: 100%;
     }
     div > h3 {
+        /* Tamaño de letra para los h3 */
         padding: 0.5rem;
         font-size: 1.5rem;
     }
     div > p {
+        /* Tamaño de letra para los parrafos */
         padding: 0.5rem;
         font-size: 1.25rem;
     }
 }
 
+/* Vamos a definir el pie de página */
 footer {
+    /* Color de fondo, ancho y distribución de elementos, establecemos una clase para facilitarnos las cosas */
     background-color: var(--primary_color);
     .pie_pagina {
         margin: 0 auto;
@@ -99,10 +113,12 @@ footer {
         display: flex;
         justify-content: space-between;
     }
+    /* Tamaño de los h2 */
     h2 {
         padding: 0.5rem;
         font-size: 1rem;
     }
+    /* Estilo y distribución de las listas, quitando los puntos */
     ul {
         list-style: none;
         display: flex;
@@ -110,13 +126,16 @@ footer {
         justify-content: space-evenly;
     }
     li {
+        /* Damos margenes para que sea más legible */
         padding: 0.5rem;
     }
     a {
+        /* Quitamos la decoración de los enlaces, establecemos el tamño y el color */
         text-decoration: none;
         font-size: 1rem;
         color: var(--text_color);
     }
+    /* tamaños para los iconos de Android, Apple y RRSS */
     .apps {
         img {
             width: 125px;
@@ -129,24 +148,28 @@ footer {
     }
     
 }
-
+/* Ampliamos el tamaño del hr para que quede bien diferenciado */
 main > hr {
 border-width: 2px;
 border-color: black;
 }
-
+/* Definimos estilos para las recomendaciones */
 .recomendaciones{
+    /* Espacio y distribución de los elementos */
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
+    /* Ancho del div para ubicar bien los elementos */
     div {
         width: 25rem;
     }
+    /* En estas listas de las recomendaciones pusimos h3 por recomendación de los testeos de accesibilidad, ponemos un tamaño de letra grande y reducimos el grosor */
     li > h3 {
         padding: 0;
         font-weight: 500;
         font-size: 1.5rem;
     }
+    /* Colores en función de lo prohibido o lo permitido */
     .positivo {
         color: darkgreen;
     }
@@ -155,15 +178,18 @@ border-color: black;
     }
 }
 
+/* Distribución del formulario de contacto */
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+/* Distribución de los elementos y espacios entre ellos para una mejor compresión y lectura */
     .datos {
         padding: 0.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* Tamaño de letra grande para una mejor lectura */
         label {
             width: 250px;
             font-size: 1.25rem;
@@ -172,12 +198,14 @@ form {
             width: 250px;
         }
     }
+    /* Distribución de los botones */
     .botones {
         width: 350px;
         padding: 0.5rem;
         display: flex;
         justify-content: space-between;
     }
+    /* Espacio con el elemento superior */
     .superior {
         padding-top: 1rem;
     }
